@@ -1,1 +1,19 @@
-
+//program to find the sum of digits
+import java.util.Scanner;
+class Main
+{
+	public static void main(String[] args) {
+		System.out.print("enter ur digit: ");
+		Scanner a=new Scanner(System.in);
+		int x=a.nextInt();
+		int rem;
+		int sum=0;
+		while(x!=0)
+		{
+			rem=x%10;
+			x/=10;
+			sum+=rem;
+		}
+		System.out.print(sum);
+	}
+}
